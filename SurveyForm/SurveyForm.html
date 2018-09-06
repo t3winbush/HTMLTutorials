@@ -1,0 +1,120 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!--
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
+
+- The freeCodeCamp Team
+
+-->
+
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Survey Form</title>
+     <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" type="text/css" href="surveyform_style.css">
+     <!--[if lt IE 9]>
+       <script src = "http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+ </head>
+
+ <body>
+   <h1 id="title">Survey Form</h1>
+  <div id="main">
+    <p id="description">
+      In this form we are building a survey.
+    </p>
+    <form id="survey-form" action="https://crossorigin.me/https://freecodecamp.com">
+      <div class="row">
+        <div class="labels">
+          <label for="name" id="name-label">Name</label>
+        </div>
+        <div class="input">
+          <input type="text" id="name" class="input-field" required placeholder="Enter your name"/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="labels">
+          <label for="name" id="email-label">Email</label>
+        </div>
+        <div class="input">
+          <input type="email" id="email"  class="input-field"  required placeholder="Enter your email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="name" id="number-label">Number</label>
+        </div>
+        <div class="input">
+          <input type="number" id="number"  class="input-field"  min=5 max=22 placeholder="#"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="dropdown" id="options">Which option do you want</label>
+        </div>
+        <div class="input">
+          <select class="dropdown" id="dropdown">
+            <option>Option 1</option>
+            <option>Option 2</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label id="radio">Do you like this stuff?</label>
+        </div>
+        <div class="input">
+          <ul style="list-style: none;">
+            <li class="radio">
+              <label><input type="radio" name="radio-buttons" value="1" class="user-ratings" />Yeah</label>
+            </li>
+            <li class="radio">
+              <label><input type="radio" name="radio-buttons" value="2" class="user-ratings" />Meh </label>
+            </li>
+            <li class="radio">
+              <label><input type="radio" name="radio-buttons" value="3" class="user-ratings" />Baby Nooo</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="pick-all">Choose all that apply.</label>
+        </div>
+        <div class="input">
+          <ul id="preferences" style="list-style:none;">
+            <li class="checkbox">
+              <label><input name="prefer" value="1" type="checkbox" class="user-ratings" />This One</label>
+            </li>
+            <li class="checkbox">
+              <label><input name="prefer" value="2" type="checkbox" class="user-ratings" />This One</label>
+            </li>
+            <li class="checkbox">
+              <label><input name="prefer" value="3" type="checkbox" class="user-ratings" />This One Too</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="labels">
+          <label for="additional-comments">Do you have any additional comments?</label>
+        </div>
+        <div class="input">
+          <textarea class="input-field" style="height:50px; resize:vertical;" placeholder="Any Aditional Comments?"></textarea>
+        </div>
+      </div>
+      <div id="button">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+ </body>
+
+ </html>
